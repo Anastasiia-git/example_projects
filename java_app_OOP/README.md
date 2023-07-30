@@ -8,7 +8,7 @@ playing strategies etc. It was implemented in a team.
 
 These files belong to my part of the work and mainly represent the implementation of the game
 board itself (see, in particular, the main class SimpleBoard). The files in the folder
-**extension** implement an extended version of SimpleBoard - ResetBoard - which allows not only
+***extension*** implement an extended version of SimpleBoard - ResetBoard - which allows not only
 to conduct allowed moves and keep track of the game status but also to store and undo moves
 (e.g. to allow a human player to go back in a game and try different moves or to support an
 automatic player in computing the possible consequences of its potential moves few steps ahead
