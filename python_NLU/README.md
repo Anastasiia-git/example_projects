@@ -30,3 +30,33 @@ Data
   - annotated utterances in the the form:
 
 			token1||<slot> token2||<slot>... tokenN||<slot><=><domain>
+
+The folder contains the following files:
+
+**task1.py** - an implementation for Task 1: contains the neural model and functions to perform the whole
+pipeline from reading training/development/test data to the final evaluation of the trained models.
+When run, performs all steps in the pipeline with 2 different pre-trained embeddings (GloVe and FastText),
+outputs the evaluation results on the development set after each training epoch and final evaluation
+results on the test set (after 10 epochs), stores corresponding predictions for the test set in a file
+"task1_test_pred_[GloVe|FastText].txt".
+
+**task2.py** - an implementation for Task 2: contains functions to build models which showed best results in
+preliminary 10-fold cross-validation experiments as well as corresponding baselines.
+When run, performs all the required steps from data reading to final evaluation, outputs
+evaluation results on the test set and stores corresponding predictions for the test set in files
+"task2_test_pred_[GloVe|FastTex]_[no_augm|with_augm].txt".
+
+**task2_all_experiments.py** - contains implementation of the 10-fold cross-validation and other functions used
+also by task2.py to build models and run experiments. When run, performs experiments for all considered parameter
+combinations and kinds of experiments (cross-validation vs training on the full training set), for K=1 within kNN
+(this can be changed in line 19).
+
+**data_utils.py** - contains functions for reading and writing data as well as data analysis, used within task1.py,
+task2.py, and task2_all_experiments.py. Can be run by itself to obtain data analysis.
+
+**make_graphs.py** - contains functions to create plots for Task 1 and Task 2. When run, shows the plots.
+
+All py-files can be executed with "python3 filename" command in the prompt. They do not require any arguments.
+But the data folders have to be in the same directory.
+
+**report_Kysliak.pdf** - the report for the assignment, for both tasks.
