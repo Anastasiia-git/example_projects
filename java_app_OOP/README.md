@@ -7,8 +7,8 @@ of the board size; allow participation of human players as well as automatic one
 playing strategies etc. It was implemented in a team. 
 
 These files belong to my part of the work and mainly represent the implementation of the game
-board itself (see, in particular, the main class SimpleBoard). The files in the folder
-***extension*** implement an extended version of SimpleBoard - ResetBoard - which allows not only
+board itself (see, in particular, the main class *SimpleBoard*). The files in the folder
+**"extension"** implement an extended version of *SimpleBoard* - *ResetBoard* - which allows not only
 to conduct allowed moves and keep track of the game status but also to store and undo moves
 (e.g. to allow a human player to go back in a game and try different moves or to support an
 automatic player in computing the possible consequences of its potential moves few steps ahead
@@ -16,7 +16,7 @@ and making a decision based on that).
 
 Main classes here:
 
-**SimpleBoard**: this class represents the board on which all players' moves have to be
+**SimpleBoard**: this class represents the board on which all players' moves have to be 
 		executed, it implements the main logic of the game.
 		It contains information about all tokens which are currently
 		on the board as well as about the current turn and game status. It verifies if
