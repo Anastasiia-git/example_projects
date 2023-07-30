@@ -23,7 +23,7 @@ Main classes here:
 		any new move is a legal one, if it leads to the end of the game, executes
 		legal moves and performes all necessary changes related to them.  
 		When the game is finished, the SimpleBoard saves the information on the win type.
-		It has 2 extensions: Board and ResetBoard.
+		It has 2 extensions: *Board* and *ResetBoard*.
 
 **Entity**:	this class represents a token in the game. Every object of this class contains
 		information about its current position on the board, height, possible moves, if
