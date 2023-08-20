@@ -1,1 +1,1 @@
-This folder contains an example of my programming in Java.
+This folder contains my programming examples in Java.
